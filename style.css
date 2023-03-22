@@ -1,5 +1,5 @@
 body {
-	background-color: #FFFACD;
+	background: linear-gradient(to right, #663300 30%, #ffcc99 90%);
 	font-family: system-ui;
 	min-width: 1000px;
     	max-width: 1500px;
