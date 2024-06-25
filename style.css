@@ -40,12 +40,12 @@ body {
   padding-top: 3%;
 }
 
-.block2.photo:hover {
-display: flex;
+.photo:hover {
+  display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 3%;
-background: url(https://qcandrey.github.io/profile/profile2.jpg);
+  background-image: url(https://qcandrey.github.io/profile/profile2.jpg);
 }
 
 img {
