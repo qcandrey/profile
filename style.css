@@ -35,9 +35,10 @@ body {
 	border: 5px inset #D3D3D3;
   display: inline-block;
   width: 256px;
-	  background: linear-gradient(SlateGrey, BurlyWood, BurlyWood, teal, SlateGrey);
-  background-position: 0 0;
-  animation: background 9s infinite alternate;
+	
+	background: linear-gradient(SlateGrey, BurlyWood, BurlyWood, DarkKhaki, SlateGrey);
+	background-position: 0 0;
+	animation: background 9s infinite alternate;
 }
 .line1 {
 	border-bottom: 5px dotted black;
