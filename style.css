@@ -45,6 +45,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 3%;
+  position: absolute;
   background-image: url("https://qcandrey.github.io/profile/profile2.jpg");
 }
 
