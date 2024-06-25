@@ -50,7 +50,7 @@ body {
 
 .photo:hover {
 	background-image: url("https://qcandrey.github.io/profile/profile2-n.jpg");
-	margin-left: 35px;
+	margin-left: 25px;
 	background-repeat: no-repeat;
 	display: block;
 	justify-content: center;
