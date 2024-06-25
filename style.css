@@ -1,9 +1,20 @@
 body {
-	background: linear-gradient(to right, #663300 30%, #ffcc99 90%);
 	font-family: system-ui;
-	min-width: 1000px;
+	min-width: 1500px;
     	max-width: 1500px;
+
+  background: linear-gradient(crimson, gold, yellowgreen, teal, crimson);
+  background-position: 0 0;
+  animation: background 2s infinite alternate;
 }
+
+@keyframes background {
+  80% {
+    background-position: 0 200px;
+  }	}
+
+
+
 .wrapper {
   display: flex;
 }
