@@ -1,11 +1,11 @@
 body {
 	font-family: system-ui;
 	min-width: 1500px;
-    	max-width: 1500px;
+    max-width: 1500px;
 
-  background: linear-gradient(crimson, gold, yellowgreen, teal, crimson);
+  background: linear-gradient(Gray, LightSteelBlue, LightSteelBlue, teal, Gray);
   background-position: 0 0;
-  animation: background 2s infinite alternate;
+  animation: background 3s infinite alternate;
 }
 
 @keyframes background {
@@ -24,16 +24,20 @@ body {
   width: 1400px;
   border: 5px inset #D3D3D3;
   margin: 2px;
-  background: linear-gradient(to top left, #ffffff 75%, #c0c0c0 85%);
+	
+	background: radial-gradient(Beige, BurlyWood, AntiqueWhite);
+	background-position: 0 0;
+	animation: background 9s infinite alternate;
   
 }
 .block2 {
   border-radius: 0px 25px 40px 0px;
+	border: 5px inset #D3D3D3;
   display: inline-block;
   width: 256px;
-  border: 5px inset #D3D3D3;
-  margin: 2px;
-  background: linear-gradient(to bottom right, #ffffff 75%, #c0c0c0 85%);
+	  background: linear-gradient(SlateGrey, BurlyWood, BurlyWood, teal, SlateGrey);
+  background-position: 0 0;
+  animation: background 9s infinite alternate;
 }
 .line1 {
 	border-bottom: 5px dotted black;
