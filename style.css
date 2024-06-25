@@ -45,7 +45,7 @@ body {
 	padding-top: 3%;
 	width: 256px;
 	height: 256px;
-	cursor: default;
+	cursor: zoom-in;
 }
 
 .photo:hover {
@@ -58,7 +58,7 @@ body {
 	padding-top: 3%;
 	width: 256px;
 	height: 256px;
-	cursor: default;
+	cursor: zoom-in;
 }
 
 img {
