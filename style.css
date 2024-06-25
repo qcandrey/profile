@@ -38,6 +38,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 3%;
+  position: relative;
 }
 
 .photo:hover {
