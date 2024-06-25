@@ -33,19 +33,28 @@ body {
 	border-bottom: 5px double black;
 	padding-top: 5%;
 }
+
 .photo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 3%;
+	
+	background-image: url("https://qcandrey.github.io/profile/profile-n.jpg");
+	background-repeat: no-repeat;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	padding-top: 3%;
+	width: 256px;
+	height: 256px;
 }
 
 .photo:hover {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 3%;
-  background-image: url("https://qcandrey.github.io/profile/profile2.jpg");
+	background-image: url("https://qcandrey.github.io/profile/profile2-n.jpg");
+	background-repeat: no-repeat;
+	display: block;
+	justify-content: center;
+	align-items: center;
+	padding-top: 3%;
+	width: 256px;
+	height: 256px;
 }
 
 img {
