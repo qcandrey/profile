@@ -47,6 +47,7 @@ body {
 	text-align:center;
 	border-bottom: 5px double black;
 	padding-top: 5%;
+	font-family: DejaVu Sans Mono, monospace;
 }
 
 .photo {
