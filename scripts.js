@@ -1,2 +1,2 @@
-setTimeout("alert('Наведите курсор на фото')",200);
+setTimeout("alert('hover over the photo')",300);
 
