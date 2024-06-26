@@ -55,7 +55,7 @@ body {
 
 .photo {
 	
-	background-image: url("https://qcandrey.github.io/profile/profile-n.jpg");
+	background-image: url("https://qcandrey.github.io/profile/photo.jpg");
 	border-radius: 0px 25px 0px 0px;
 	background-repeat: no-repeat;
 	display: block;
@@ -68,7 +68,7 @@ body {
 }
 
 .photo:hover {
-	background-image: url("https://qcandrey.github.io/profile/profile2-n.jpg");
+	background-image: url("https://qcandrey.github.io/profile/photo-hover.jpg");
 	margin-left: 25px;
 	background-repeat: no-repeat;
 	display: block;
