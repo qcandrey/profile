@@ -28,6 +28,7 @@ body {
 	background: radial-gradient(Beige, BurlyWood, AntiqueWhite);
 	background-position: 0 0;
 	animation: background 9s infinite alternate;
+	animation: none !important;
   
 }
 .block2 {
@@ -39,6 +40,7 @@ body {
 	background: linear-gradient(SlateGrey, BurlyWood, BurlyWood, DarkKhaki, SlateGrey);
 	background-position: 0 0;
 	animation: background 9s infinite alternate;
+	animation: none !important;
 }
 .line1 {
 	border-bottom: 5px dotted black;
