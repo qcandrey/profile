@@ -1,105 +1,93 @@
+/* Базовые настройки темы */
 body {
-	font-family: system-ui;
-	min-width: 1500px;
-    max-width: 1500px;
-
-  background: linear-gradient(Gray, LightSteelBlue, LightSteelBlue, teal, Gray);
-  background-position: 0 0;
-  animation: background 3s infinite alternate;
-	font-family: calibri-light;
+    background: radial-gradient(circle at center, #0f172a 0%, #020617 100%);
+    color: #38bdf8;
+    font-family: 'Fira Code', monospace;
 }
 
-@keyframes background {
-  80% {
-    background-position: 0 200px;
-  }	}
+@keyframes blink { 50% { opacity: 0; } }
+.cursor-blink::after { content: '_'; animation: blink 1s infinite; color: #10b981; }
 
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #090d16; }
+::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
 
-
-.wrapper {
-  display: flex;
+.neon-border {
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.1);
+    transition: all 0.3s ease;
 }
-.block1 {
-  border-radius: 40px 0px 0px 15px;
-  display: inline-block;
-  width: 1400px;
-  border: 5px inset #D3D3D3;
-  margin: 2px;
-	
-	background: radial-gradient(Beige, BurlyWood, AntiqueWhite);
-	background-position: 0 0;
-	animation: background 9s infinite alternate;
-	animation: none !important;
-  
-}
-.block2 {
-  border-radius: 0px 25px 40px 0px;
-	border: 5px inset #D3D3D3;
-  display: inline-block;
-  width: 256px;
-	
-	background: linear-gradient(SlateGrey, BurlyWood, BurlyWood, DarkKhaki, SlateGrey);
-	background-position: 0 0;
-	animation: background 9s infinite alternate;
-	animation: none !important;
-}
-.line1 {
-	border-bottom: 5px dotted black;
-	padding-bottom: 5px;
-}
-.line2 {
-	text-align:center;
-	border-bottom: 5px double black;
-	padding-top: 5%;
-	font-family: DejaVu Sans Mono, monospace;
+.neon-border:hover {
+    box-shadow: 0 0 25px rgba(16, 185, 129, 0.25);
+    border-color: #10b981;
 }
 
-.photo {
-	
-	background-image: url("https://qcandrey.github.io/profile/photo.jpg");
-	border-radius: 0px 25px 0px 0px;
-	background-repeat: no-repeat;
-	display: block;
-	justify-content: center;
-	align-items: center;
-	padding-top: 3%;
-	width: 256px;
-	height: 256px;
-	cursor: zoom-in;
+/* Подсветка JSON */
+.j-key { color: #f43f5e; font-weight: bold; } 
+.j-str { color: #fbbf24; }                   
+.j-num { color: #38bdf8; }                   
+.j-punc { color: #94a3b8; }                  
+
+/* СТИЛИЗАЦИЯ КНОПОК И КУРСОРОВ */
+.nav-btn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    max-width: 180px !important;
+    padding: 0.5rem 0.75rem !important;
+    border-radius: 8px !important; /* Скругление 8px */
+    border: 1px solid transparent !important;
+    background-color: transparent !important;
+    color: #94a3b8 !important;
+    cursor: pointer !important; /* Изменение курсора на палец при наведении */
+    transition: all 0.2s ease-in-out !important;
 }
 
-.photo:hover {
-	background-image: url("https://qcandrey.github.io/profile/photo-hover.jpg");
-	margin-left: 25px;
-	background-repeat: no-repeat;
-	display: block;
-	justify-content: center;
-	align-items: center;
-	padding-top: 3%;
-	width: 256px;
-	height: 256px;
-	cursor: zoom-in;
+.nav-btn:hover {
+    background-color: rgba(30, 41, 59, 0.6) !important;
+    color: #f1f5f9 !important;
 }
 
-img {
-	width: 90%;
-	height: 90%;
-	border-radius: 0px 15px 0px 0px;
-	outline: 6px double black;
-	pointer-events: none;
+.btn-title { display: flex; align-items: center; gap: 0.5rem; }
+.btn-icon { color: #475569; transition: all 0.2s ease; }
+.btn-arrow { visibility: hidden; opacity: 0; transition: all 0.2s ease; }
+
+/* 🎯 ЭФФЕКТЫ ВКЛЮЧЕННОЙ АКТИВНОЙ КНОПКИ */
+.nav-btn[data-active="true"] {
+    background: linear-gradient(to right, rgba(16, 185, 129, 0.15), rgba(20, 184, 166, 0.02)) !important;
+    border-color: rgba(16, 185, 129, 0.4) !important;
+    color: #10b981 !important;
+    font-weight: 700 !important;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.15) !important;
 }
 
-h1, h2, h3 {
-	text-align: center;
-	margin: 0px;
+.nav-btn[data-active="true"] .btn-icon {
+    color: #10b981 !important;
+    transform: scale(1.1);
 }
-p {
-	padding-left: 1%;
+
+/* Появление стрелочки <- справа */
+.nav-btn[data-active="true"] .btn-arrow {
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: #10b981 !important;
+    transform: translateX(0);
+    animation: fadeInLeft 0.3s ease-forward;
 }
-.attention {
-	font-weight: 700;
-	font-family: serif;
+/* Фиксируем цвет ссылок в контактах, чтобы они не становились фиолетовыми */
+aside a, 
+aside a:visited, 
+aside a:active, 
+aside a:link {
+    color: #94a3b8 !important; /* Стандартный спокойный серый цвет */
+    text-decoration: none !important; /* Убираем дефолтное подчеркивание */
+    transition: color 0.2s ease-in-out;
 }
-a {
-color: #000000;
+
+/* Эффект при наведении мышки на ссылку */
+aside a:hover {
+    color: #10b981 !important; /* Яркий неоново-зеленый цвет под стиль кнопок */
+}
+#about-text {
+    white-space: pre-line; /* Это заставит браузер делать перенос там, где стоит \n */
 }
