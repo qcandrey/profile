@@ -88,6 +88,3 @@ aside a:link {
 aside a:hover {
     color: #10b981 !important; /* Яркий неоново-зеленый цвет под стиль кнопок */
 }
-#about-text {
-    white-space: pre-line; /* Это заставит браузер делать перенос там, где стоит \n */
-}
